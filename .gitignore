@@ -30,3 +30,37 @@ checkpoints/
 
 # Compiled notebook artifacts
 .ipynb_checkpoints/
+
+# Bulk results dumps (timestamped experiment outputs)
+results/
+
+# Internal planning and Claude working docs
+plans/
+claudedocs/
+
+# Binary database
+data/
+
+# Copyrighted textbooks
+*.pdf
+!final_report/vts_final_report.pdf
+!final_report/vts_final_report_gt.pdf
+!midterm_presentation/VTS_Midterm_Presentation.pdf
+!midterm_presentation/VTS_Midterm_Presentation_v2.pdf
+!midterm_presentation/presentation_midterm.pdf
+!midterm_presentation/Complexity_Falsified_Simplicity_Wins.pdf
+
+# Scratch / backup files
+*.bak
+execution_validation_report.txt
+ablation_sensitivity_output.txt
+texput.log
+
+# Word docs (keep .md versions)
+*.docx
+
+# Node / video project (not part of submission)
+vts-explainer-video/
+
+# Substack PDF (keep .md)
+substack_article.pdf

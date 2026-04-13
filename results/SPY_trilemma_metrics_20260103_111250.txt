@@ -1,0 +1,38 @@
+TRILEMMA DCA SYSTEM - PERFORMANCE METRICS
+================================================================================
+
+Evaluation Period: 2025-09-15 00:00:00 to 2025-12-22 00:00:00
+Number of Periods: 15
+Base DCA Amount: $100.0
+
+DYNAMIC DCA (Model-Driven)
+----------------------------------------
+Total Invested: $1,500.00
+Units Accumulated: 2.22639607
+Avg Unit Cost: $673.73
+Final Value: $1,511.43
+Total Return: +0.76%
+
+NAIVE DCA (Baseline)
+----------------------------------------
+Total Invested: $1,500.00
+Units Accumulated: 2.22689094
+Avg Unit Cost: $673.58
+Final Value: $1,511.77
+Total Return: +0.78%
+
+COMPARATIVE PERFORMANCE
+----------------------------------------
+Alpha vs Naive: -0.02%
+Unit Accumulation Improvement: -0.02%
+Unit Cost Improvement: -0.02%
+
+RISK METRICS
+----------------------------------------
+Max Drawdown: -2.98%
+Information Ratio: 2.11
+
+EFFICIENCY METRICS
+----------------------------------------
+Avg Allocation Turnover: 0.0251
+Total Turnover: 0.35

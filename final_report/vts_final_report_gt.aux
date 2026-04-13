@@ -1,0 +1,133 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Executive Summary}{3}{section.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Visual Trading System overview: architecture, signal construction, and key performance results.}}{3}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:infographic}{{1}{3}{Visual Trading System overview: architecture, signal construction, and key performance results}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Project Trajectory}{3}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Headline Performance}{4}{subsection.1.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Performance summary---all signals evaluated on step\,=\,1, 3,076 windows, 2016--2025.}}{4}{table.caption.3}\protected@file@percent }
+\newlabel{tab:headline}{{1}{4}{Performance summary---all signals evaluated on step\,=\,1, 3,076 windows, 2016--2025}{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Secondary Contribution: Documented Null Results}{4}{subsection.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Problem Statement}{4}{section.2}\protected@file@percent }
+\newlabel{sec:problem}{{2}{4}{Problem Statement}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Tournament Objective}{4}{subsection.2.1}\protected@file@percent }
+\newlabel{eq:spd}{{1}{4}{Tournament Objective}{equation.1}{}}
+\newlabel{eq:strategy_spd}{{2}{4}{Tournament Objective}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Evaluation Metric: Recency-Weighted Percentile}{4}{subsection.2.2}\protected@file@percent }
+\citation{edwards2018}
+\citation{cohen2020}
+\citation{sood2021}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Two Tournament Complications}{5}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Literature Review}{5}{section.3}\protected@file@percent }
+\newlabel{sec:litreview}{{3}{5}{Literature Review}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Classical Technical Analysis}{5}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Image-Based Financial Classification}{5}{subsection.3.2}\protected@file@percent }
+\citation{wang2015}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Gramian Angular Field Encoding}{6}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Gap Addressed by This Work}{6}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Exploratory Data Analysis}{6}{section.4}\protected@file@percent }
+\newlabel{sec:eda}{{4}{6}{Exploratory Data Analysis}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Regime Identification and Formal Statistical Tests}{6}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Volatility Clustering (Ljung--Box).}{6}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Regime Distribution Difference (Mann--Whitney U).}{6}{section*.5}\protected@file@percent }
+\citation{edwards2018}
+\citation{cohen2020}
+\citation{sood2021}
+\@writefile{toc}{\contentsline {paragraph}{Bootstrap Confidence Intervals.}{7}{section*.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Formal statistical evidence for regime structure. \textbf  {Left}: Autocorrelation function of squared log-returns---significant spikes through lag~20 confirm volatility clustering ($Q(20)=847.3$, $p<0.001$). \textbf  {Centre}: Return distributions by regime; the Mann--Whitney test ($U=2{,}341{,}887$, $p<0.001$) rejects equality. \textbf  {Right}: Bootstrap mean returns per regime with 95\% CIs---non-overlapping intervals confirm economically significant separation.}}{7}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:eda_regime}{{2}{7}{Formal statistical evidence for regime structure. \textbf {Left}: Autocorrelation function of squared log-returns---significant spikes through lag~20 confirm volatility clustering ($Q(20)=847.3$, $p<0.001$). \textbf {Centre}: Return distributions by regime; the Mann--Whitney test ($U=2{,}341{,}887$, $p<0.001$) rejects equality. \textbf {Right}: Bootstrap mean returns per regime with 95\% CIs---non-overlapping intervals confirm economically significant separation}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Feature Shortlist}{7}{subsection.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Feature shortlist: carry-forward decisions based on EDA.}}{7}{table.caption.8}\protected@file@percent }
+\newlabel{tab:feature_shortlist}{{2}{7}{Feature shortlist: carry-forward decisions based on EDA}{table.caption.8}{}}
+\citation{wang2015}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Methods: Midterm CNN/GAF Approach}{8}{section.5}\protected@file@percent }
+\newlabel{sec:cnn}{{5}{8}{Methods: Midterm CNN/GAF Approach}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Design Rationale}{8}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Gramian Angular Field Encoding}{8}{subsection.5.2}\protected@file@percent }
+\newlabel{eq:gasf}{{4}{8}{Gramian Angular Field Encoding}{equation.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}CNN Architecture and Training}{8}{subsection.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces 4-layer CNN architecture used in the midterm phase.}}{8}{table.caption.9}\protected@file@percent }
+\newlabel{tab:cnn_arch}{{3}{8}{4-layer CNN architecture used in the midterm phase}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Midterm Result and Failure Analysis}{8}{subsection.5.4}\protected@file@percent }
+\citation{sood2021}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces CNN failure root cause analysis. Severity scores represent relative ranking by the authors, not measured quantities.}}{9}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:root_causes}{{3}{9}{CNN failure root cause analysis. Severity scores represent relative ranking by the authors, not measured quantities}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Methods: Post-Midterm OLS Pivot}{9}{section.6}\protected@file@percent }
+\newlabel{sec:ols}{{6}{9}{Methods: Post-Midterm OLS Pivot}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Signal Design}{9}{subsection.6.1}\protected@file@percent }
+\newlabel{eq:trendscore}{{6}{10}{Signal Design}{equation.6}{}}
+\newlabel{eq:tsz}{{7}{10}{Signal Design}{equation.7}{}}
+\newlabel{eq:prob_up}{{8}{10}{Signal Design}{equation.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Signal Interpretation: Regime-Relative Dampening}{10}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Allocator and Turnover Governor}{10}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Results}{11}{section.7}\protected@file@percent }
+\newlabel{sec:results}{{7}{11}{Results}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Performance Ladder}{11}{subsection.7.1}\protected@file@percent }
+\newlabel{sec:perf_ladder}{{7.1}{11}{Performance Ladder}{subsection.7.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Performance ladder: step\,=\,1, 3,076 windows, 2016--2025.}}{11}{table.caption.11}\protected@file@percent }
+\newlabel{tab:perf_ladder}{{4}{11}{Performance ladder: step\,=\,1, 3,076 windows, 2016--2025}{table.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces SPD percentile comparison across signal variants (step\,=\,1, full validation).}}{11}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:perf_comparison}{{4}{11}{SPD percentile comparison across signal variants (step\,=\,1, full validation)}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Fee Robustness}{11}{subsection.7.2}\protected@file@percent }
+\newlabel{sec:fee}{{7.2}{11}{Fee Robustness}{subsection.7.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Fee sensitivity analysis (champion signal, step\,=\,7 fast-scan). Small fee drag at low bps is a numerical discretization artifact; theoretical invariance holds in the continuous limit.}}{12}{table.caption.13}\protected@file@percent }
+\newlabel{tab:fee}{{5}{12}{Fee sensitivity analysis (champion signal, step\,=\,7 fast-scan). Small fee drag at low bps is a numerical discretization artifact; theoretical invariance holds in the continuous limit}{table.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Null Results: Rejected Variants}{12}{subsection.7.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Post-midterm variants tested against pre-specified acceptance criteria (step\,=\,7 fast-scan).}}{12}{table.caption.14}\protected@file@percent }
+\newlabel{tab:null_results}{{6}{12}{Post-midterm variants tested against pre-specified acceptance criteria (step\,=\,7 fast-scan)}{table.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Traditional Risk Metrics}{12}{subsection.7.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Risk-adjusted performance: champion vs.\ neutral DCA.}}{12}{table.caption.15}\protected@file@percent }
+\newlabel{tab:trad_metrics}{{7}{12}{Risk-adjusted performance: champion vs.\ neutral DCA}{table.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Signal Diagnostics}{12}{subsection.7.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Annual win rate by year (2016--2025). Win rate degrades in high-volatility periods (2017--2018, 2020--2021 cycle peaks) where DCA's steady accumulation is difficult to beat.}}{13}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:temporal}{{5}{13}{Annual win rate by year (2016--2025). Win rate degrades in high-volatility periods (2017--2018, 2020--2021 cycle peaks) where DCA's steady accumulation is difficult to beat}{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Ablation Studies}{13}{section.8}\protected@file@percent }
+\newlabel{sec:ablations}{{8}{13}{Ablation Studies}{section.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Methodology}{13}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Pre-Midterm Ablations}{13}{subsection.8.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Ablation \#1: Allocator sensitivity heatmap---RW\% vs.\ $\alpha \times $ weight floor.}}{14}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:abl1}{{6}{14}{Ablation \#1: Allocator sensitivity heatmap---RW\% vs.\^^M$\alpha \times $ weight floor}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Ablation \#2: SPD percentile comparison---Neutral vs.\ CNN (raw) vs.\ CNN (EMA smoothed).}}{14}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:abl2}{{7}{14}{Ablation \#2: SPD percentile comparison---Neutral vs.\ CNN (raw) vs.\ CNN (EMA smoothed)}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Ablation \#2 supplemental: EMA convergence test---signal $\to $ neutral as $\alpha \to 0$.}}{15}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:abl3}{{8}{15}{Ablation \#2 supplemental: EMA convergence test---signal $\to $ neutral as $\alpha \to 0$}{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Post-Midterm Ablations}{15}{subsection.8.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Ablation \#3: Vol-amplitude scaling vs.\ champion (step\,=\,7 fast-scan).}}{15}{table.caption.20}\protected@file@percent }
+\newlabel{tab:abl3}{{8}{15}{Ablation \#3: Vol-amplitude scaling vs.\ champion (step\,=\,7 fast-scan)}{table.caption.20}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Ablation \#4: Weekly OLS granularity variants vs.\ champion (step\,=\,7 fast-scan).}}{16}{table.caption.21}\protected@file@percent }
+\newlabel{tab:abl4}{{9}{16}{Ablation \#4: Weekly OLS granularity variants vs.\ champion (step\,=\,7 fast-scan)}{table.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Ablation Summary}{16}{subsection.8.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Ablation study summary.}}{16}{table.caption.22}\protected@file@percent }
+\newlabel{tab:abl_summary}{{10}{16}{Ablation study summary}{table.caption.22}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Governance \& Reproducibility}{16}{section.9}\protected@file@percent }
+\newlabel{sec:governance}{{9}{16}{Governance \& Reproducibility}{section.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Project Structure}{16}{subsection.9.1}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}{\ignorespaces Repository structure.}}{17}{lstlisting.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Tournament Endpoint Contract}{17}{subsection.9.2}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}{\ignorespaces Tournament entry point usage.}}{17}{lstlisting.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Contract guarantees verified by \texttt  {verify\_endpoints\_demo.py} (all 9 checks, $<$30 seconds).}}{17}{table.caption.23}\protected@file@percent }
+\newlabel{tab:contract}{{11}{17}{Contract guarantees verified by \texttt {verify\_endpoints\_demo.py} (all 9 checks, $<$30 seconds)}{table.caption.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Torch Fallback and Backend Detection}{17}{subsection.9.3}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3}{\ignorespaces Torch fallback in \texttt  {tournament\_mode/evaluator.py}.}}{17}{lstlisting.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}Test Suite}{18}{subsection.9.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces 62-test suite categories and coverage.}}{18}{table.caption.24}\protected@file@percent }
+\newlabel{tab:tests}{{12}{18}{62-test suite categories and coverage}{table.caption.24}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}Data Provenance}{18}{subsection.9.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Data sources. No API keys, real-time feeds, or external databases are required for evaluation.}}{18}{table.caption.25}\protected@file@percent }
+\newlabel{tab:data}{{13}{18}{Data sources. No API keys, real-time feeds, or external databases are required for evaluation}{table.caption.25}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Conclusions \& Limitations}{18}{section.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.1}Summary of Findings}{18}{subsection.10.1}\protected@file@percent }
+\citation{cohen2020}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.2}Performance Ceiling Assessment}{19}{subsection.10.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3}Lessons Learned}{19}{subsection.10.3}\protected@file@percent }
+\newlabel{sec:lessons}{{10.3}{19}{Lessons Learned}{subsection.10.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.4}Limitations}{20}{subsection.10.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.5}Future Directions}{20}{subsection.10.5}\protected@file@percent }
+\bibcite{edwards2018}{1}
+\bibcite{cohen2020}{2}
+\bibcite{sood2021}{3}
+\bibcite{wang2015}{4}
+\gdef \@abspage@last{21}

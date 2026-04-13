@@ -1,0 +1,10 @@
+{
+  "train_start": "2014-01-01",
+  "train_end": "2015-12-31",
+  "lookback": 90,
+  "horizon": 10,
+  "random_seed": 42,
+  "trained_at": "2026-01-23T12:05:45.415895",
+  "model_class": "DeepTradingCNNClassifier",
+  "temperature": 1.4941246509552002
+}

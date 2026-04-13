@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTS Midterm Presentation</title>
+    <style>
+        * {kimiMore
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1a2e;
+            color: #fff;
+            overflow: hidden;
+        }
+        
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            padding: 60px 80px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .slide.active {
+            display: flex;
+        }
+        
+        .slide h1 {
+            font-size: 3.5em;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .slide h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #4ecca3;
+        }
+        
+        .slide h3 {
+            font-size: 1.8em;
+            margin: 20px 0;
+            color: #ff6b6b;
+        }
+        
+        .slide p, .slide li {
+            font-size: 1.4em;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 15px 0;
+        }
+        
+        .slide ul {
+            text-align: left;
+            list-style-position: inside;
+        }
+        
+        .slide img {
+            max-width: 85%;
+            max-height: 60vh;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            margin: 20px 0;
+        }
+        
+        .big-number {
+            font-size: 4em;
+            font-weight: bold;
+            color: #4ecca3;
+            margin: 20px 0;
+        }
+        
+        .highlight {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        
+        .highlight-green {
+            color: #4ecca3;
+            font-weight: bold;
+        }
+        
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+        
+        .nav-btn {
+            padding: 12px 24px;
+            background: #4ecca3;
+            color: #1a1a2e;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .nav-btn:hover {
+            background: #3db892;
+            transform: scale(1.05);
+        }
+        
+        .slide-counter {
+            position: fixed;
+            bottom: 30px;
+            right: 40px;
+            font-size: 1.2em;
+            color: #888;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .three-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .metric-box {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        
+        .metric-box h3 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.6em;
+            border-left: 5px solid #4ecca3;
+            padding-left: 30px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+        
+        th, td {
+            padding: 15px;
+            border: 1px solid #444;
+            text-align: center;
+        }
+        
+        th {
+            background: #4ecca3;
+            color: #1a1a2e;
+        }
+        
+        tr:nth-child(even) {
+            background: rgba(255,255,255,0.05);
+        }
+        
+        .title-slide {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        
+        .title-slide h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        
+        .title-slide p {
+            font-size: 1.8em;
+            color: #888;
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+        }
+        
+        .footer-note {
+            position: absolute;
+            bottom: 80px;
+            font-size: 0.9em;
+            color: #888;
+            font-style: italic;
+        }
+        
+        .status-done {
+            color: #4ecca3;
+            font-weight: bold;
+        }
+        
+        .status-doing {
+            color: #f1c40f;
+            font-weight: bold;
+        }
+        
+        .status-next {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        
+        .risk-high {
+            color: #ff6b6b;
+        }
+        
+        .risk-medium {
+            color: #f1c40f;
+        }
+        
+        .risk-low {
+            color: #4ecca3;
+        }
+        
+        .timeline-box {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            border-left: 4px solid;
+        }
+        
+        .pipeline-box {
+            background: rgba(78, 204, 163, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .pipeline-arrow {
+            font-size: 2em;
+            color: #4ecca3;
+        }
+        
+        .ask-box {
+            background: rgba(255,255,255,0.08);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: left;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: Title / Executive Summary -->
+    <div class="slide active title-slide">
+        <h1>When AI Meets Market Reality</h1>
+        <p style="font-size: 1.8em; color: #f1c40f; margin: 30px 0;">Midterm Finding: Baseline Beats CNN (So Far)</p>
+        <p style="font-size: 1.2em; color: #888; max-width: 800px; margin: 20px auto;">
+            We validated causality + built ablation harness + identified pivot path
+        </p>
+        <p style="margin-top: 40px; font-size: 1.4em; color: #4ecca3;"><strong>Robert Katz</strong> | GT ID: rkatz8@gatech.edu</p>
+        <p style="margin-top: 20px;">VTS Tournament Submission - Stacking Sats Challenge</p>
+        <p style="color: #666; margin-top: 15px;">Practicum Midterm Presentation | February 2026</p>
+    </div>
+
+    <!-- SLIDE 2: Project Overview (NEW) -->
+    <div class="slide">
+        <h2>Project Overview</h2>
+        <div style="text-align: left; max-width: 950px;">
+            <div style="margin: 20px 0; padding: 20px; background: rgba(78, 204, 163, 0.1); border-radius: 10px; border-left: 4px solid #4ecca3;">
+                <h3 style="color: #4ecca3; margin-bottom: 15px;">🎯 Sponsor & Problem</h3>
+                <p style="font-size: 1.1em;">VTS Tournament - Stacking Sats Challenge: Help retail investors accumulate Bitcoin more effectively than simple Dollar-Cost Averaging (DCA).</p>
+            </div>
+            
+            <div style="margin: 20px 0; padding: 20px; background: rgba(241, 196, 15, 0.1); border-radius: 10px; border-left: 4px solid #f1c40f;">
+                <h3 style="color: #f1c40f; margin-bottom: 15px;">💡 Decision This Enables</h3>
+                <p style="font-size: 1.1em;">Daily allocation between BTC (risk asset) and cash, optimizing for risk-adjusted returns under strict causality constraints.</p>
+            </div>
+            
+            <div style="margin: 20px 0; padding: 20px; background: rgba(255, 107, 107, 0.1); border-radius: 10px; border-left: 4px solid #ff6b6b;">
+                <h3 style="color: #ff6b6b; margin-bottom: 15px;">🏆 Success Definition</h3>
+                <p style="font-size: 1.1em;">Top 60% percentile in recency-weighted SPD metric; beat DCA consistently; demonstrate scientific rigor in evaluation.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: Why Visual Trading Systems? -->
+    <div class="slide">
+        <h2>Why Visual Trading Systems?</h2>
+        <p style="font-size: 1.2em; color: #888; margin-bottom: 40px;">From Classic Technical Analysis to Cutting-Edge AI — A Personal Journey</p>
+        
+        <div style="text-align: left; max-width: 950px;">
+            <div style="margin: 25px 0; padding: 20px; background: rgba(78, 204, 163, 0.1); border-radius: 10px; border-left: 4px solid #4ecca3;">
+                <h3 style="color: #4ecca3; margin-bottom: 15px;">📚 My Finaance Foundation (early 1970s Era)</h3>
+                <p style="font-size: 1.2em;">Reading <em>Magee & Edwards' Technical Analysis of Stock Trends</em> — learning how human traders "see" patterns that quantitative models often miss: head-and-shoulders, trendlines, support levels.</p>
+            </div>
+            
+            <div style="margin: 25px 0; padding: 20px; background: rgba(255, 107, 107, 0.1); border-radius: 10px; border-left: 4px solid #ff6b6b;">
+                <h3 style="color: #ff6b6b; margin-bottom: 15px;">🎓 The Discovery (OMSA Program)</h3>
+                <p style="font-size: 1.2em;">Research from <strong>JP Morgan's AI group</strong> with <strong>Professor Baich</strong> (former GT ML4T professor) showed CNNs achieving <strong>0.90+ F1 scores</strong> on candlestick pattern classification.</p>
+            </div>
+            
+            <div style="margin: 25px 0; padding: 20px; background: rgba(241, 196, 15, 0.1); border-radius: 10px; border-left: 4px solid #f1c40f;">
+                <h3 style="color: #f1c40f; margin-bottom: 15px;">🔬 The Gap & The Test</h3>
+                <p style="font-size: 1.2em;">Pattern recognition ≠ Profitable trading. Does academic success translate to real decisions under strict causality? We tested this hypothesis systematically.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: The Tournament Challenge -->
+    <div class="slide">
+        <h2>The Tournament Challenge</h2>
+        <div style="text-align: left; max-width: 800px;">
+            <p><span class="emoji">🎯</span> <strong>Objective:</strong> Predict daily BTC allocation weights (2016-2025)</p>
+            <p><span class="emoji">📊</span> <strong>Metric:</strong> Recency-Weighted SPD Percentile</p>
+            <p><span class="emoji">⚖️</span> <strong>Constraints:</strong> Σwᵢ = 1.0, wᵢ ≥ 1e-5</p>
+            <p><span class="emoji">🔒</span> <strong>Critical:</strong> Strict causality - no lookahead allowed</p>
+            <p><span class="emoji">🏆</span> <strong>Target:</strong> Top performers >60% percentile</p>
+        </div>
+        <div style="margin-top: 30px; padding: 15px; background: rgba(78, 204, 163, 0.15); border-radius: 8px; border-left: 3px solid #4ecca3;">
+            <p style="font-size: 1.1em; margin: 0;"><span class="emoji">✓</span> <strong>Causality Verification:</strong> Last-row modification test confirmed zero leakage (0.00e+00 diff)</p>
+        </div>
+        <p class="footer-note">✓ Evaluation harness implemented + leakage tests automated</p>
+    </div>
+
+    <!-- SLIDE 5: Data Pipeline (NEW) -->
+    <div class="slide">
+        <h2>Data Pipeline & Methodology</h2>
+        <div style="text-align: left; max-width: 900px; margin-bottom: 30px;">
+            <p style="font-size: 1.2em; margin-bottom: 20px;"><strong>Dataset:</strong> BTC daily OHLCV (2016-2025) from Polygon</p>
+            <p style="font-size: 1.1em;"><strong>Feature Construction:</strong> GAF images from 90-day rolling windows</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; gap: 10px; align-items: center; max-width: 1100px;">
+            <div class="pipeline-box">
+                <p style="font-size: 0.9em; margin: 0;"><strong>Raw Data</strong></p>
+                <p style="font-size: 0.8em; color: #888; margin: 5px 0 0 0;">OHLCV</p>
+            </div>
+            <span class="pipeline-arrow">→</span>
+            <div class="pipeline-box">
+                <p style="font-size: 0.9em; margin: 0;"><strong>Features</strong></p>
+                <p style="font-size: 0.8em; color: #888; margin: 5px 0 0 0;">GAF Images</p>
+            </div>
+            <span class="pipeline-arrow">→</span>
+            <div class="pipeline-box">
+                <p style="font-size: 0.9em; margin: 0;"><strong>Model</strong></p>
+                <p style="font-size: 0.8em; color: #888; margin: 5px 0 0 0;">CNN (296K)</p>
+            </div>
+            <span class="pipeline-arrow">→</span>
+            <div class="pipeline-box">
+                <p style="font-size: 0.9em; margin: 0;"><strong>Allocator</strong></p>
+                <p style="font-size: 0.8em; color: #888; margin: 5px 0 0 0;">Tilt → EMA</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 10px; text-align: left; max-width: 900px;">
+            <p style="font-size: 1em; margin: 0;"><strong>Training/Validation Scheme:</strong></p>
+            <ul style="font-size: 0.9em; margin-top: 10px;">
+                <li>Training: 2014-2015 (470 days, pre-tournament period)</li>
+                <li>Evaluation: 2016-2025 rolling walk-forward (3,076 windows)</li>
+                <li>Leakage Controls: Strict temporal embargo, causality verification tests</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: Our Initial Approach -->
+    <div class="slide">
+        <h2>Our Initial Approach</h2>
+        <div style="font-family: monospace; text-align: left; background: rgba(0,0,0,0.3); padding: 30px; border-radius: 10px;">
+            <p>Price Data (90 days)</p>
+            <p style="color: #888;">↓</p>
+            <p><strong>GAF Image Generation</strong></p>
+            <p style="color: #888;">↓</p>
+            <p><strong>Deep CNN (296K params)</strong></p>
+            <p style="color: #888;">↓</p>
+            <p>Temperature Calibration → Tilt Allocation → EMA → Normalize</p>
+        </div>
+        <p style="margin-top: 30px; color: #4ecca3;">Hypothesis: Visual patterns in GAF images predict returns under strict causality constraints</p>
+    </div>
+
+    <!-- SLIDE 7: First Results: Reality Check -->
+    <div class="slide">
+        <h2>First Results: Reality Check</h2>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>CNN Result</th>
+                <th>Target</th>
+            </tr>
+            <tr>
+                <td>RW SPD Percentile</td>
+                <td class="highlight">41.43%</td>
+                <td class="highlight-green">>60%</td>
+            </tr>
+            <tr>
+                <td>Win Rate vs DCA</td>
+                <td>54.32%</td>
+                <td class="highlight-green">>50%</td>
+            </tr>
+            <tr>
+                <td>Windows Evaluated</td>
+                <td colspan="2">3,076 rolling windows (consistent across seeds)</td>
+            </tr>
+        </table>
+        <p style="margin-top: 30px; font-size: 1.3em;">
+            <strong>Benchmark:</strong> Dollar-Cost Averaging (equal daily weights) = 50th percentile
+        </p>
+        <p style="margin-top: 20px; font-size: 1.6em;">
+            <span class="highlight">Underperforms</span> simple DCA baseline
+        </p>
+    </div>
+
+    <!-- SLIDE 8: Progress & Timeline (NEW) -->
+    <div class="slide">
+        <h2>Current Status vs Plan</h2>
+        <div class="three-column" style="max-width: 1100px;">
+            <div class="timeline-box" style="border-left-color: #4ecca3;">
+                <h3 style="color: #4ecca3; font-size: 1.2em;">✓ DONE</h3>
+                <ul style="font-size: 0.9em; padding-left: 15px;">
+                    <li>GAF image pipeline</li>
+                    <li>CNN architecture (296K)</li>
+                    <li>Causality verification</li>
+                    <li>Ablation harness</li>
+                    <li>Baseline comparison</li>
+                </ul>
+            </div>
+            <div class="timeline-box" style="border-left-color: #f1c40f;">
+                <h3 style="color: #f1c40f; font-size: 1.2em;">⟳ Phase I to March 2026(</h3>
+                <ul style="font-size: 0.9em; padding-left: 15px;">
+                    <li>Weekly granularity testing</li>
+                    <li>Regime detection model</li>
+                    <li>XGBoost baseline</li>
+                    <li>Multi-timeframe features</li>
+                </ul>
+            </div>
+            <div class="timeline-box" style="border-left-color: #ff6b6b;">
+                <h3 style="color: #ff6b6b; font-size: 1.2em;">→ Phase II (To Final)</h3>
+                <ul style="font-size: 0.9em; padding-left: 15px;">
+                    <li>Ensemble integration</li>
+                    <li>Full backtest validation</li>
+                    <li>Documentation & model card</li>
+                    <li>Final submission prep</li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin-top: 30px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+            <p style="font-size: 1em; margin: 0;"><strong>Timeline:</strong> Midterm (Feb 24 approx.) → Feature Complete (March 2026) → Final Validation (April 2026 est.) → Submission (April 23 est.)</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 9: Ablation Study #1 -->
+    <div class="slide">
+        <h2>Ablation Study #1: Allocator Sizing</h2>
+        <p style="margin-bottom: 30px; font-size: 1.1em;"><strong>Question:</strong> Are losses from overbetting?</p>
+        <img src="images/01_ablation_sensitivity.png" alt="Sensitivity Sweep">
+        <p style="color: #ff6b6b; margin-top: 20px;">
+            <span class="emoji">⚠️</span> Conclusion: Minimal impact (+0.35 pp max). Problem NOT allocator aggressiveness.
+        </p>
+        <p class="footer-note" style="font-size: 0.8em;">Method: Constant model, vary sensitivity parameter only. All other hyperparameters frozen.</p>
+    </div>
+
+    <!-- SLIDE 10: Ablation Study #2 -->
+    <div class="slide">
+        <h2>Ablation Study #2: The "Aha!" Moment</h2>
+        <p style="margin-bottom: 20px; font-size: 1.1em;"><strong>Test:</strong> Replace CNN with constant prob_up = 0.5 (coin flip)</p>
+        <img src="images/02_ablation_signal_quality.png" alt="Signal Quality Test">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; max-width: 800px;">
+            <div style="padding: 15px; background: rgba(255, 107, 107, 0.1); border-radius: 8px;">
+                <p style="font-size: 1em; margin: 0; color: #ff6b6b;"><strong>CNN:</strong> 41.43% RW | 54.32% Win</p>
+            </div>
+            <div style="padding: 15px; background: rgba(78, 204, 163, 0.1); border-radius: 8px;">
+                <p style="font-size: 1em; margin: 0; color: #4ecca3;"><strong>Neutral:</strong> 41.94% RW | 70.42% Win ⭐</p>
+            </div>
+        </div>
+        <p style="color: #4ecca3; font-size: 1.6em; margin-top: 20px;">
+            <span class="emoji">✅</span> CNN signal is WORTHLESS. Coin flip outperforms with higher consistency.
+        </p>
+    </div>
+
+    <!-- SLIDE 11: Ablation Study #3 -->
+    <div class="slide">
+        <h2>Ablation Study #3: EMA Smoothing</h2>
+        <p style="margin-bottom: 20px; font-size: 1.1em;"><strong>Question:</strong> Can smoothing reduce "small wins, big losses"?</p>
+        <img src="images/03_ablation_ema_flat.png" alt="EMA Flat Line">
+        <div style="margin-top: 20px; text-align: left; max-width: 700px;">
+            <p style="font-size: 1.1em;"><strong>Tested:</strong> 7 EMA alpha values [0.05, 0.10, 0.20, 0.30, 0.50, 0.70, 0.90]</p>
+            <p style="font-size: 1.1em; color: #ff6b6b;"><span class="emoji">📉</span> <strong>Result:</strong> ALL produce IDENTICAL results (41.94% RW, 70.42% win)</p>
+            <p style="font-size: 1em; color: #888; margin-top: 10px;"><em>Mathematical proof: Constant signal → tilt always zero → smoothing has no effect</em></p>
+        </div>
+    </div>
+
+    <!-- SLIDE 12: Why GAF + CNN Failed -->
+    <div class="slide">
+        <h2>Midterm Diagnosis: Working Hypotheses</h2>
+        <img src="images/06_root_causes.png" alt="Root Causes">
+        <p style="margin-top: 20px; color: #888; font-style: italic;">These findings motivate our regime-aware / longer-horizon pivot strategy</p>
+    </div>
+
+    <!-- SLIDE 13: The Evidence-Based Pivot -->
+    <div class="slide">
+        <h2>The Evidence-Based Pivot</h2>
+        <div style="text-align: left; max-width: 800px;">
+            <h3 style="color: #4ecca3;">Simplified Baseline</h3>
+            <p>• Constant prob_up = 0.5 (neutral probability)</p>
+            <p>• Serves as sanity baseline + calibration anchor for bounded tilts</p>
+            <p>• Same allocation logic: tilt → bounded multiplier → EMA → normalize</p>
+            <p>• NO model artifacts required</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px;">
+                <div class="metric-box">
+                    <h3>CNN Approach</h3>
+                    <p>41.43% RW</p>
+                    <p>54.32% Win Rate</p>
+                    <p>1.1 MB Model</p>
+                </div>
+                <div class="metric-box" style="border: 2px solid #4ecca3;">
+                    <h3 style="color: #4ecca3;">Simplified ⭐</h3>
+                    <p class="highlight-green">41.94% RW</p>
+                    <p class="highlight-green">70.42% Win Rate</p>
+                    <p class="highlight-green">No Model</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 14: Side-by-Side -->
+    <div class="slide">
+        <h2>Side-by-Side Comparison</h2>
+        <img src="images/04_performance_comparison.png" alt="Performance Comparison">
+        <p style="color: #4ecca3; font-size: 1.6em; margin-top: 20px;">
+            <span class="emoji">🏆</span> Simplified baseline wins on ALL dimensions
+        </p>
+    </div>
+
+    <!-- SLIDE 15: What We Did Right -->
+    <div class="slide">
+        <h2>What We Did Right</h2>
+        <div class="two-column">
+            <div style="text-align: left;">
+                <h3 style="color: #4ecca3;">Technical Excellence</h3>
+                <p><span class="emoji">✓</span> Strict causality enforcement</p>
+                <p><span class="emoji">✓</span> Deterministic (seed=42)</p>
+                <p><span class="emoji">✓</span> Comprehensive testing</p>
+                <p><span class="emoji">✓</span> Grader-safe implementation</p>
+            </div>
+            <div style="text-align: left;">
+                <h3 style="color: #4ecca3;">Scientific Rigor</h3>
+                <p><span class="emoji">✓</span> Hypothesis-driven development</p>
+                <p><span class="emoji">✓</span> Systematic ablation studies</p>
+                <p><span class="emoji">✓</span> Transparent negative results</p>
+                <p><span class="emoji">✓</span> Learning orientation</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 16: Key Lessons -->
+    <div class="slide">
+        <h2>Key Lessons Learned</h2>
+        <div style="text-align: left; max-width: 900px;">
+            <p style="margin: 25px 0;"><span class="highlight">1.</span> <strong>Ablation studies are critical</strong> - Without them, we'd never know CNN was worthless</p>
+            <p style="margin: 25px 0;"><span class="highlight">2.</span> <strong>Test "better than random?" early</strong> - Should be Ablation #0, not #2</p>
+            <p style="margin: 25px 0;"><span class="highlight">3.</span> <strong>Complexity ≠ Performance</strong> - 296K parameters lost to coin flip</p>
+            <p style="margin: 25px 0;"><span class="highlight">4.</span> <strong>Simple often beats complex</strong> - Occam's Razor applies to trading</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 17: Future Improvements -->
+    <div class="slide">
+        <h2>Future Improvements & Next Steps</h2>
+        <img src="images/07_future_improvements.png" alt="Future Improvements" style="max-height: 45vh;">
+        <div class="two-column" style="margin-top: 20px;">
+            <div style="text-align: left; background: rgba(78, 204, 163, 0.1); padding: 20px; border-radius: 10px;">
+                <h3 style="color: #4ecca3; font-size: 1.2em;">Week 1 (Immediate)</h3>
+                <p style="font-size: 0.95em;">• Implement weekly granularity</p>
+                <p style="font-size: 0.95em;">• Add regime labels (bull/bear)</p>
+                <p style="font-size: 0.95em;">• XGBoost baseline comparison</p>
+            </div>
+            <div style="text-align: left; background: rgba(241, 196, 15, 0.1); padding: 20px; border-radius: 10px;">
+                <h3 style="color: #f1c40f; font-size: 1.2em;">Week 2 (To Final)</h3>
+                <p style="font-size: 0.95em;">• Ensemble integration</p>
+                <p style="font-size: 0.95em;">• Full backtest validation</p>
+                <p style="font-size: 0.95em;">• Sanity gates + documentation</p>
+            </div>
+        </div>
+        <p style="margin-top: 15px; color: #4ecca3;">
+            Expected: 41.94% → 57-73% RW percentile
+        </p>
+    </div>
+
+    <!-- SLIDE 18: Risks & Mitigations (NEW) -->
+    <div class="slide">
+        <h2>Risks & Mitigations</h2>
+        <div style="text-align: left; max-width: 950px;">
+            <div style="margin: 15px 0; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #ff6b6b;">
+                <p style="font-size: 1em; margin: 0;"><span class="risk-high">🔴 Regime Shifts:</span> BTC market structure changed (institutional adoption). <strong>Mitigation:</strong> Regime-aware model + rolling validation.</p>
+            </div>
+            
+            <div style="margin: 15px 0; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #f1c40f;">
+                <p style="font-size: 1em; margin: 0;"><span class="risk-medium">🟡 Metric Brittleness:</span> SPD percentile sensitive to outliers. <strong>Mitigation:</strong> Multiple metrics tracked, sanity gates implemented.</p>
+            </div>
+            
+            <div style="margin: 15px 0; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #f1c40f;">
+                <p style="font-size: 1em; margin: 0;"><span class="risk-medium">🟡 Overfitting:</span> Risk with regime detection on limited data. <strong>Mitigation:</strong> Strict train/test split, cross-validation, simple models.</p>
+            </div>
+            
+            <div style="margin: 15px 0; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #4ecca3;">
+                <p style="font-size: 1em; margin: 0;"><span class="risk-low">🟢 Data Leakage:</span> Causality violations in time series. <strong>Mitigation:</strong> Automated leakage tests, embargo periods, last-row verification.</p>
+            </div>
+            
+            <div style="margin: 15px 0; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #4ecca3;">
+                <p style="font-size: 1em; margin: 0;"><span class="risk-low">🟢 Timeline:</span> Limited time to final submission. <strong>Mitigation:</strong> Simplified baseline ready; incremental improvements only.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 19: Deliverables (NEW) -->
+    <div class="slide">
+        <h2>What We Will Deliver</h2>
+        <div class="two-column" style="max-width: 1000px;">
+            <div style="text-align: left;">
+                <h3 style="color: #4ecca3;">📦 Final Submission</h3>
+                <p style="font-size: 1.1em;"><span class="emoji">✓</span> Canvas submission deck</p>
+                <p style="font-size: 1.1em;"><span class="emoji">✓</span> Reproducible pipeline (Docker-ready)</p>
+                <p style="font-size: 1.1em;"><span class="emoji">✓</span> Strong baseline (simplified)</p>
+                <p style="font-size: 1.1em;"><span class="emoji">✓</span> Regime-aware extension</p>
+                <p style="font-size: 1.1em;"><span class="emoji">✓</span> Full technical writeup</p>
+            </div>
+            <div style="text-align: left;">
+                <h3 style="color: #4ecca3;">📋 Documentation</h3>
+                <p style="font-size: 1.1em;"><span class="emoji">✓</span> Model card & methodology</p>
+                <p style="font-size: 1.1em;"><span class="emoji">✓</span> LESSONS_LEARNED.md</p>
+                <p style="font-size: 1.1em;"><span class="emoji">✓</span> Interactive notebook demo</p>
+                <p style="font-size: 1.1em;"><span class="emoji">✓</span> Reproducibility guide</p>
+            </div>
+        </div>
+        <div style="margin-top: 40px; padding: 20px; background: rgba(78, 204, 163, 0.1); border-radius: 10px; border-left: 4px solid #4ecca3; max-width: 900px;">
+            <p style="font-size: 1.2em; margin: 0; color: #4ecca3;">
+                <strong>Midterm Result:</strong> We falsified a plausible deep-learning approach under strict causality, 
+                and we're pivoting to a simpler, more robust baseline with a clear path to exceed the target percentile.
+            </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 20: The Bottom Line -->
+    <div class="slide">
+        <h2>The Bottom Line</h2>
+        <div class="quote">
+            "We built a technically sophisticated system and discovered through rigorous testing that it performs equivalently to a coin flip. This simplified version represents our evidence-based conclusion: in financial time series, signal quality matters more than model complexity."
+        </div>
+        <p style="margin-top: 30px; font-size: 1.8em; color: #4ecca3;">
+            <span class="emoji">🎓</span> Scientific Integrity > Raw Performance
+        </p>
+        <p style="margin-top: 30px; font-size: 1.2em; color: #f1c40f;">
+            <strong>We will deliver:</strong> Reproducible pipeline, strong baseline, regime-aware extension, full writeup
+        </p>
+    </div>
+
+    <!-- SLIDE 21: Questions/Ask (NEW) -->
+    <div class="slide">
+        <h2>Questions & Feedback Request</h2>
+        <div style="text-align: left; max-width: 850px;">
+            <p style="font-size: 1.3em; margin-bottom: 30px;">We'd appreciate feedback on the following:</p>
+            
+            <div class="ask-box">
+                <p style="margin: 0;"><span class="emoji">1️⃣</span> <strong>Metric Interpretation:</strong> Is our understanding of the SPD percentile correct? Should we weight differently?</p>
+            </div>
+            
+            <div class="ask-box">
+                <p style="margin: 0;"><span class="emoji">2️⃣</span> <strong>Split Strategy:</strong> Is our train/test split (2014-2015 / 2016-2025) appropriate or should we use expanding windows?</p>
+            </div>
+            
+            <div class="ask-box">
+                <p style="margin: 0;"><span class="emoji">3️⃣</span> <strong>Pivot Scope:</strong> Is our plan (weekly + regime) appropriately scoped for remaining timeline?</p>
+            </div>
+            
+            <div class="ask-box">
+                <p style="margin: 0;"><span class="emoji">4️⃣</span> <strong>Baseline Choice:</strong> Should we keep simplified constant or invest more in XGBoost/ensemble?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 22: Thank You -->
+    <div class="slide title-slide">
+        <h1>Thank You</h1>
+        <p style="font-size: 1.8em; margin: 30px 0;">Questions?</p>
+        <div style="margin-top: 60px; text-align: left; max-width: 600px;">
+            <p style="font-size: 1em; color: #666; margin: 10px 0;">
+                <strong>Documentation:</strong> LESSONS_LEARNED.md
+            </p>
+            <p style="font-size: 1em; color: #666; margin: 10px 0;">
+                <strong>Code:</strong> Visual_Trading_System repository
+            </p>
+            <p style="font-size: 1em; color: #666; margin: 10px 0;">
+                <strong>Notebooks:</strong> btc_accumulation_model_simplified.ipynb
+            </p>
+        </div>
+        <p style="margin-top: 60px; color: #4ecca3; font-style: italic;">
+            "The best model is the one that works, not the one that sounds impressive."
+        </p>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" onclick="prevSlide()">← Previous</button>
+        <button class="nav-btn" onclick="nextSlide()">Next →</button>
+    </div>
+    
+    <div class="slide-counter">
+        <span id="current">1</span> / <span id="total">22</span>
+    </div>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        document.getElementById('total').textContent = totalSlides;
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[n].classList.add('active');
+            document.getElementById('current').textContent = n + 1;
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>

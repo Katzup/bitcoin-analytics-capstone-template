@@ -1,0 +1,32 @@
+# Secrets and session files
+.letta/
+.claude/
+**/.letta/
+**/.claude/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Tool artifacts
+.playwright-mcp/
+.serena/
+
+# Large model checkpoints (keep only final model in models/)
+checkpoints/
+
+# Compiled notebook artifacts
+.ipynb_checkpoints/

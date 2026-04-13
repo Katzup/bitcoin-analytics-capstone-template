@@ -1,0 +1,799 @@
+{
+  "timestamp": "2026-01-03T21:59:08.391484",
+  "models_investigated": [
+    "OXLCG",
+    "HCXY",
+    "VGI",
+    "HYI",
+    "IGI"
+  ],
+  "results": [
+    {
+      "ticker": "OXLCG",
+      "status": "success",
+      "analysis": {
+        "ticker": "OXLCG",
+        "sample_size": 23,
+        "prediction_stats": {
+          "mean": 0.0025535008829572926,
+          "std": 0.0008561678746708362,
+          "min": 0.0009584818035364151,
+          "max": 0.00420752726495266,
+          "median": 0.002347193658351898,
+          "positive_pct": 1.0,
+          "q25": 0.0020144088193774223,
+          "q75": 0.003016386181116104
+        },
+        "actual_stats": {
+          "mean": -0.00011961508805499129,
+          "std": 0.00580987680156655,
+          "min": -0.012501727789640427,
+          "max": 0.007600000128149986,
+          "median": 0.001583531266078353,
+          "positive_pct": 0.6086956521739131,
+          "q25": -0.003562319092452526,
+          "q75": 0.004693405469879508
+        },
+        "correlation": 0.24567777299592683,
+        "directional_accuracy": 0.6086956521739131,
+        "accuracy_by_magnitude": {
+          "q1_low_confidence": 0.6666666666666666,
+          "q2": 0.3333333333333333,
+          "q3": 0.4,
+          "q4_high_confidence": 1.0
+        },
+        "sign_breakdown": {
+          "both_positive": 14,
+          "both_negative": 0,
+          "pred_pos_actual_neg": 9,
+          "pred_neg_actual_pos": 0,
+          "agreement_rate": 0.6086956521739131
+        },
+        "trade_analysis": {
+          "total_trades": 23,
+          "winning_trades": 14,
+          "losing_trades": 9,
+          "avg_winning_return": 0.0038465344987343997,
+          "avg_losing_return": -0.006289181111949599,
+          "win_loss_ratio": 0.6116113418050387,
+          "avg_predicted_return": 0.0025535008829572926,
+          "avg_actual_return": -0.00011961508805499129
+        }
+      },
+      "worst_trades": [
+        {
+          "sample_index": 11,
+          "predicted_return": 0.002706727012991905,
+          "actual_return": -0.012501727789640427,
+          "pnl": -0.012501727789640427,
+          "error": 0.015208454802632332
+        },
+        {
+          "sample_index": 13,
+          "predicted_return": 0.0023646317422389984,
+          "actual_return": -0.009881422854959965,
+          "pnl": -0.009881422854959965,
+          "error": 0.012246054597198963
+        },
+        {
+          "sample_index": 14,
+          "predicted_return": 0.0025518815964460373,
+          "actual_return": -0.009493670426309109,
+          "pnl": -0.009493670426309109,
+          "error": 0.012045552022755146
+        },
+        {
+          "sample_index": 12,
+          "predicted_return": 0.002078775316476822,
+          "actual_return": -0.008310249075293541,
+          "pnl": -0.008310249075293541,
+          "error": 0.010389024391770363
+        },
+        {
+          "sample_index": 15,
+          "predicted_return": 0.002347193658351898,
+          "actual_return": -0.0075128511525690556,
+          "pnl": -0.0075128511525690556,
+          "error": 0.009860044810920954
+        },
+        {
+          "sample_index": 0,
+          "predicted_return": 0.002019016072154045,
+          "actual_return": -0.0051444401033222675,
+          "pnl": -0.0051444401033222675,
+          "error": 0.007163456175476313
+        },
+        {
+          "sample_index": 1,
+          "predicted_return": 0.0020098015666007996,
+          "actual_return": -0.0019801980815827847,
+          "pnl": -0.0019801980815827847,
+          "error": 0.003989999648183584
+        },
+        {
+          "sample_index": 9,
+          "predicted_return": 0.0020598936825990677,
+          "actual_return": -0.0011853022733703256,
+          "pnl": -0.0011853022733703256,
+          "error": 0.0032451959559693933
+        },
+        {
+          "sample_index": 10,
+          "predicted_return": 0.0009584818035364151,
+          "actual_return": -0.0005927682504989207,
+          "pnl": -0.0005927682504989207,
+          "error": 0.0015512500540353358
+        },
+        {
+          "sample_index": 7,
+          "predicted_return": 0.0019210148602724075,
+          "actual_return": 0.00039588281651958823,
+          "pnl": 0.00039588281651958823,
+          "error": 0.0015251320437528193
+        }
+      ],
+      "best_trades": [
+        {
+          "sample_index": 16,
+          "predicted_return": 0.0024380628019571304,
+          "actual_return": 0.007600000128149986,
+          "pnl": 0.007600000128149986,
+          "error": 0.005161937326192856
+        },
+        {
+          "sample_index": 5,
+          "predicted_return": 0.0023056920617818832,
+          "actual_return": 0.006563245784491301,
+          "pnl": 0.006563245784491301,
+          "error": 0.004257553722709417
+        },
+        {
+          "sample_index": 18,
+          "predicted_return": 0.004120001569390297,
+          "actual_return": 0.00562874274328351,
+          "pnl": 0.00562874274328351,
+          "error": 0.0015087411738932133
+        },
+        {
+          "sample_index": 17,
+          "predicted_return": 0.0036479774862527847,
+          "actual_return": 0.005586592014878988,
+          "pnl": 0.005586592014878988,
+          "error": 0.0019386145286262035
+        },
+        {
+          "sample_index": 3,
+          "predicted_return": 0.002417849376797676,
+          "actual_return": 0.005573248490691185,
+          "pnl": 0.005573248490691185,
+          "error": 0.003155399113893509
+        },
+        {
+          "sample_index": 4,
+          "predicted_return": 0.0021530017256736755,
+          "actual_return": 0.0047637950628995895,
+          "pnl": 0.0047637950628995895,
+          "error": 0.002610793337225914
+        },
+        {
+          "sample_index": 6,
+          "predicted_return": 0.0018001850694417953,
+          "actual_return": 0.0046230158768594265,
+          "pnl": 0.0046230158768594265,
+          "error": 0.002822830807417631
+        },
+        {
+          "sample_index": 19,
+          "predicted_return": 0.003753935918211937,
+          "actual_return": 0.004392971284687519,
+          "pnl": 0.004392971284687519,
+          "error": 0.0006390353664755821
+        },
+        {
+          "sample_index": 22,
+          "predicted_return": 0.00420752726495266,
+          "actual_return": 0.002773809479549527,
+          "pnl": 0.002773809479549527,
+          "error": 0.0014337177854031324
+        },
+        {
+          "sample_index": 20,
+          "predicted_return": 0.003326045349240303,
+          "actual_return": 0.0015936255222186446,
+          "pnl": 0.0015936255222186446,
+          "error": 0.0017324198270216584
+        }
+      ],
+      "training_metrics": {
+        "best_val_loss": 4.833558341488242e-05,
+        "best_epoch": 35
+      }
+    },
+    {
+      "ticker": "HCXY",
+      "status": "success",
+      "analysis": {
+        "ticker": "HCXY",
+        "sample_size": 51,
+        "prediction_stats": {
+          "mean": 0.0013987234994476917,
+          "std": 0.002483200539198071,
+          "min": -0.0038779303431510925,
+          "max": 0.005745008587837219,
+          "median": 0.0022311359643936157,
+          "positive_pct": 0.7254901960784313,
+          "q25": -0.0007210597395896912,
+          "q75": 0.003285791724920273
+        },
+        "actual_stats": {
+          "mean": -5.821716131678983e-05,
+          "std": 0.008666958983604017,
+          "min": -0.01906614750623703,
+          "max": 0.01702970266342163,
+          "median": 0.0015511810779571533,
+          "positive_pct": 0.5294117647058824,
+          "q25": -0.007034590933471918,
+          "q75": 0.005934160901233554
+        },
+        "correlation": -0.03470466376156957,
+        "directional_accuracy": 0.5294117647058824,
+        "accuracy_by_magnitude": {
+          "q1_low_confidence": 0.5384615384615384,
+          "q2": 0.6153846153846154,
+          "q3": 0.5833333333333334,
+          "q4_high_confidence": 0.38461538461538464
+        },
+        "sign_breakdown": {
+          "both_positive": 20,
+          "both_negative": 7,
+          "pred_pos_actual_neg": 17,
+          "pred_neg_actual_pos": 7,
+          "agreement_rate": 0.5294117647058824
+        },
+        "trade_analysis": {
+          "total_trades": 37,
+          "winning_trades": 20,
+          "losing_trades": 17,
+          "avg_winning_return": 0.007455576895154081,
+          "avg_losing_return": -0.008895547262749033,
+          "win_loss_ratio": 0.8381245891835157,
+          "avg_predicted_return": 0.002764770308056393,
+          "avg_actual_return": -5.710177199059242e-05
+        }
+      },
+      "worst_trades": [
+        {
+          "sample_index": 12,
+          "predicted_return": 0.002896346151828766,
+          "actual_return": -0.01906614750623703,
+          "pnl": -0.01906614750623703,
+          "error": 0.021962493658065796
+        },
+        {
+          "sample_index": 30,
+          "predicted_return": 0.0007947012782096863,
+          "actual_return": -0.015338226221501827,
+          "pnl": -0.015338226221501827,
+          "error": 0.016132927499711514
+        },
+        {
+          "sample_index": 9,
+          "predicted_return": 0.003439471125602722,
+          "actual_return": -0.013011195696890354,
+          "pnl": -0.013011195696890354,
+          "error": 0.016450666822493076
+        },
+        {
+          "sample_index": 18,
+          "predicted_return": 0.002505652606487274,
+          "actual_return": -0.01285046711564064,
+          "pnl": -0.01285046711564064,
+          "error": 0.015356119722127914
+        },
+        {
+          "sample_index": 0,
+          "predicted_return": 0.005745008587837219,
+          "actual_return": -0.012167255394160748,
+          "pnl": -0.012167255394160748,
+          "error": 0.017912263981997967
+        },
+        {
+          "sample_index": 19,
+          "predicted_return": 0.003452412784099579,
+          "actual_return": -0.011023622006177902,
+          "pnl": -0.011023622006177902,
+          "error": 0.014476034790277481
+        },
+        {
+          "sample_index": 31,
+          "predicted_return": 0.0026333555579185486,
+          "actual_return": -0.010989011265337467,
+          "pnl": -0.010989011265337467,
+          "error": 0.013622366823256016
+        },
+        {
+          "sample_index": 20,
+          "predicted_return": 0.002965770661830902,
+          "actual_return": -0.010406440123915672,
+          "pnl": -0.010406440123915672,
+          "error": 0.013372210785746574
+        },
+        {
+          "sample_index": 11,
+          "predicted_return": 0.0039444416761398315,
+          "actual_return": -0.009041257202625275,
+          "pnl": -0.009041257202625275,
+          "error": 0.012985698878765106
+        },
+        {
+          "sample_index": 8,
+          "predicted_return": 0.0027717798948287964,
+          "actual_return": -0.009011130779981613,
+          "pnl": -0.009011130779981613,
+          "error": 0.01178291067481041
+        }
+      ],
+      "best_trades": [
+        {
+          "sample_index": 13,
+          "predicted_return": 0.0031653717160224915,
+          "actual_return": 0.01702970266342163,
+          "pnl": 0.01702970266342163,
+          "error": 0.01386433094739914
+        },
+        {
+          "sample_index": 25,
+          "predicted_return": 0.0021319836378097534,
+          "actual_return": 0.015980158001184464,
+          "pnl": 0.015980158001184464,
+          "error": 0.01384817436337471
+        },
+        {
+          "sample_index": 7,
+          "predicted_return": 0.003369845449924469,
+          "actual_return": 0.014390931464731693,
+          "pnl": 0.014390931464731693,
+          "error": 0.011021086014807224
+        },
+        {
+          "sample_index": 35,
+          "predicted_return": 0.0017081201076507568,
+          "actual_return": 0.01229670736938715,
+          "pnl": 0.01229670736938715,
+          "error": 0.010588587261736393
+        },
+        {
+          "sample_index": 5,
+          "predicted_return": 0.0034723952412605286,
+          "actual_return": 0.011919666081666946,
+          "pnl": 0.011919666081666946,
+          "error": 0.008447270840406418
+        },
+        {
+          "sample_index": 28,
+          "predicted_return": 0.001772560179233551,
+          "actual_return": 0.010325655341148376,
+          "pnl": 0.010325655341148376,
+          "error": 0.008553095161914825
+        },
+        {
+          "sample_index": 3,
+          "predicted_return": 0.0034696608781814575,
+          "actual_return": 0.00849396362900734,
+          "pnl": 0.00849396362900734,
+          "error": 0.005024302750825882
+        },
+        {
+          "sample_index": 21,
+          "predicted_return": 0.0022311359643936157,
+          "actual_return": 0.007905138656497002,
+          "pnl": 0.007905138656497002,
+          "error": 0.005674002692103386
+        },
+        {
+          "sample_index": 15,
+          "predicted_return": 0.003507740795612335,
+          "actual_return": 0.007716659922152758,
+          "pnl": 0.007716659922152758,
+          "error": 0.0042089191265404224
+        },
+        {
+          "sample_index": 24,
+          "predicted_return": 0.0032196342945098877,
+          "actual_return": 0.007563694380223751,
+          "pnl": 0.007563694380223751,
+          "error": 0.004344060085713863
+        }
+      ],
+      "training_metrics": {
+        "best_val_loss": 6.59990546409972e-05,
+        "best_epoch": 7
+      }
+    },
+    {
+      "ticker": "VGI",
+      "status": "success",
+      "analysis": {
+        "ticker": "VGI",
+        "sample_size": 51,
+        "prediction_stats": {
+          "mean": -0.0028891952744885987,
+          "std": 0.002119557533697143,
+          "min": -0.007798336446285248,
+          "max": 0.0034157223999500275,
+          "median": -0.003033153712749481,
+          "positive_pct": 0.09803921568627451,
+          "q25": -0.003935486078262329,
+          "q75": -0.0018329434096813202
+        },
+        "actual_stats": {
+          "mean": -0.0004210107430231337,
+          "std": 0.011540884414428066,
+          "min": -0.024695225059986115,
+          "max": 0.017902813851833344,
+          "median": 0.002583979396149516,
+          "positive_pct": 0.5686274509803921,
+          "q25": -0.008963576517999172,
+          "q75": 0.008951538242399693
+        },
+        "correlation": -0.11094313093676275,
+        "directional_accuracy": 0.4117647058823529,
+        "accuracy_by_magnitude": {
+          "q1_low_confidence": 0.5384615384615384,
+          "q2": 0.38461538461538464,
+          "q3": 0.3333333333333333,
+          "q4_high_confidence": 0.38461538461538464
+        },
+        "sign_breakdown": {
+          "both_positive": 2,
+          "both_negative": 19,
+          "pred_pos_actual_neg": 3,
+          "pred_neg_actual_pos": 27,
+          "agreement_rate": 0.4117647058823529
+        },
+        "trade_analysis": {
+          "total_trades": 5,
+          "winning_trades": 2,
+          "losing_trades": 3,
+          "avg_winning_return": 0.0024306929553858936,
+          "avg_losing_return": -0.00916347373276949,
+          "win_loss_ratio": 0.2652588992200081,
+          "avg_predicted_return": 0.001083242893218994,
+          "avg_actual_return": -0.004525807057507336
+        }
+      },
+      "worst_trades": [
+        {
+          "sample_index": 40,
+          "predicted_return": 6.640329957008362e-05,
+          "actual_return": -0.010217113420367241,
+          "pnl": -0.010217113420367241,
+          "error": 0.010283516719937325
+        },
+        {
+          "sample_index": 41,
+          "predicted_return": 0.0034157223999500275,
+          "actual_return": -0.008939974009990692,
+          "pnl": -0.008939974009990692,
+          "error": 0.01235569640994072
+        },
+        {
+          "sample_index": 39,
+          "predicted_return": 0.0008083097636699677,
+          "actual_return": -0.008333333767950535,
+          "pnl": -0.008333333767950535,
+          "error": 0.009141643531620502
+        },
+        {
+          "sample_index": 42,
+          "predicted_return": 0.0009944215416908264,
+          "actual_return": 0.001291989698074758,
+          "pnl": 0.001291989698074758,
+          "error": 0.00029756815638393164
+        },
+        {
+          "sample_index": 43,
+          "predicted_return": 0.00013135746121406555,
+          "actual_return": 0.003569396212697029,
+          "pnl": 0.003569396212697029,
+          "error": 0.0034380387514829636
+        }
+      ],
+      "best_trades": [
+        {
+          "sample_index": 43,
+          "predicted_return": 0.00013135746121406555,
+          "actual_return": 0.003569396212697029,
+          "pnl": 0.003569396212697029,
+          "error": 0.0034380387514829636
+        },
+        {
+          "sample_index": 42,
+          "predicted_return": 0.0009944215416908264,
+          "actual_return": 0.001291989698074758,
+          "pnl": 0.001291989698074758,
+          "error": 0.00029756815638393164
+        },
+        {
+          "sample_index": 39,
+          "predicted_return": 0.0008083097636699677,
+          "actual_return": -0.008333333767950535,
+          "pnl": -0.008333333767950535,
+          "error": 0.009141643531620502
+        },
+        {
+          "sample_index": 41,
+          "predicted_return": 0.0034157223999500275,
+          "actual_return": -0.008939974009990692,
+          "pnl": -0.008939974009990692,
+          "error": 0.01235569640994072
+        },
+        {
+          "sample_index": 40,
+          "predicted_return": 6.640329957008362e-05,
+          "actual_return": -0.010217113420367241,
+          "pnl": -0.010217113420367241,
+          "error": 0.010283516719937325
+        }
+      ],
+      "training_metrics": {
+        "best_val_loss": 9.330951070296578e-05,
+        "best_epoch": 24
+      }
+    },
+    {
+      "ticker": "HYI",
+      "status": "success",
+      "analysis": {
+        "ticker": "HYI",
+        "sample_size": 51,
+        "prediction_stats": {
+          "mean": -0.006655068666327233,
+          "std": 0.0011097705832195193,
+          "min": -0.008970260620117188,
+          "max": -0.0041944719851017,
+          "median": -0.006625063717365265,
+          "positive_pct": 0.0,
+          "q25": -0.007462466135621071,
+          "q75": -0.0059843529015779495
+        },
+        "actual_stats": {
+          "mean": -0.0028037535238956265,
+          "std": 0.01065654310338563,
+          "min": -0.03194321319460869,
+          "max": 0.02383134700357914,
+          "median": -0.0034904014319181442,
+          "positive_pct": 0.35294117647058826,
+          "q25": -0.008688096888363361,
+          "q75": 0.0052864463068544865
+        },
+        "correlation": 0.6921730608723199,
+        "directional_accuracy": 0.6470588235294118,
+        "accuracy_by_magnitude": {
+          "q1_low_confidence": 0.3076923076923077,
+          "q2": 0.46153846153846156,
+          "q3": 0.9166666666666666,
+          "q4_high_confidence": 0.9230769230769231
+        },
+        "sign_breakdown": {
+          "both_positive": 0,
+          "both_negative": 33,
+          "pred_pos_actual_neg": 0,
+          "pred_neg_actual_pos": 18,
+          "agreement_rate": 0.6470588235294118
+        },
+        "trade_analysis": {
+          "total_trades": 0,
+          "note": "Model never predicted positive returns"
+        }
+      },
+      "worst_trades": [],
+      "best_trades": [],
+      "training_metrics": {
+        "best_val_loss": 9.829054761212319e-05,
+        "best_epoch": 81
+      }
+    },
+    {
+      "ticker": "IGI",
+      "status": "success",
+      "analysis": {
+        "ticker": "IGI",
+        "sample_size": 51,
+        "prediction_stats": {
+          "mean": -0.0005193897066455261,
+          "std": 0.0010857402594978628,
+          "min": -0.004044213332235813,
+          "max": 0.001030479557812214,
+          "median": -0.0004079332575201988,
+          "positive_pct": 0.3333333333333333,
+          "q25": -0.0009750118479132652,
+          "q75": 0.00036862771958112717
+        },
+        "actual_stats": {
+          "mean": -0.0009148527420692,
+          "std": 0.00594801228551982,
+          "min": -0.016726404428482056,
+          "max": 0.012247397564351559,
+          "median": -0.0012165450025349855,
+          "positive_pct": 0.35294117647058826,
+          "q25": -0.003931629937142134,
+          "q75": 0.001831512781791389
+        },
+        "correlation": 0.14010308927172122,
+        "directional_accuracy": 0.5490196078431373,
+        "accuracy_by_magnitude": {
+          "q1_low_confidence": 0.3076923076923077,
+          "q2": 0.46153846153846156,
+          "q3": 0.5833333333333334,
+          "q4_high_confidence": 0.8461538461538461
+        },
+        "sign_breakdown": {
+          "both_positive": 6,
+          "both_negative": 22,
+          "pred_pos_actual_neg": 11,
+          "pred_neg_actual_pos": 12,
+          "agreement_rate": 0.5490196078431373
+        },
+        "trade_analysis": {
+          "total_trades": 17,
+          "winning_trades": 6,
+          "losing_trades": 11,
+          "avg_winning_return": 0.0026435540639795363,
+          "avg_losing_return": -0.0029623901143416083,
+          "win_loss_ratio": 0.8923720245964522,
+          "avg_predicted_return": 0.000525759971317123,
+          "avg_actual_return": -0.0009838215808164986
+        }
+      },
+      "worst_trades": [
+        {
+          "sample_index": 22,
+          "predicted_return": 0.0007950281724333763,
+          "actual_return": -0.007263922598212957,
+          "pnl": -0.007263922598212957,
+          "error": 0.008058950770646334
+        },
+        {
+          "sample_index": 7,
+          "predicted_return": 6.564892828464508e-06,
+          "actual_return": -0.00623885914683342,
+          "pnl": -0.00623885914683342,
+          "error": 0.006245424039661884
+        },
+        {
+          "sample_index": 23,
+          "predicted_return": 0.0007187901064753532,
+          "actual_return": -0.004860267508774996,
+          "pnl": -0.004860267508774996,
+          "error": 0.005579057615250349
+        },
+        {
+          "sample_index": 5,
+          "predicted_return": 0.000360722653567791,
+          "actual_return": -0.0033262057695537806,
+          "pnl": -0.0033262057695537806,
+          "error": 0.0036869284231215715
+        },
+        {
+          "sample_index": 24,
+          "predicted_return": 0.0004551103338599205,
+          "actual_return": -0.002436053706333041,
+          "pnl": -0.002436053706333041,
+          "error": 0.0028911640401929617
+        },
+        {
+          "sample_index": 6,
+          "predicted_return": 4.955660551786423e-05,
+          "actual_return": -0.002383790211752057,
+          "pnl": -0.002383790211752057,
+          "error": 0.0024333468172699213
+        },
+        {
+          "sample_index": 20,
+          "predicted_return": 0.00037653278559446335,
+          "actual_return": -0.0018143203342333436,
+          "pnl": -0.0018143203342333436,
+          "error": 0.002190853119827807
+        },
+        {
+          "sample_index": 25,
+          "predicted_return": 0.0008748611435294151,
+          "actual_return": -0.0012218770571053028,
+          "pnl": -0.0012218770571053028,
+          "error": 0.002096738200634718
+        },
+        {
+          "sample_index": 21,
+          "predicted_return": 0.0005912566557526588,
+          "actual_return": -0.0012172854039818048,
+          "pnl": -0.0012172854039818048,
+          "error": 0.0018085420597344637
+        },
+        {
+          "sample_index": 19,
+          "predicted_return": 0.00042572617530822754,
+          "actual_return": -0.0012165450025349855,
+          "pnl": -0.0012165450025349855,
+          "error": 0.001642271177843213
+        }
+      ],
+      "best_trades": [
+        {
+          "sample_index": 28,
+          "predicted_return": 0.0002599284052848816,
+          "actual_return": 0.007326007355004549,
+          "pnl": 0.007326007355004549,
+          "error": 0.0070660789497196674
+        },
+        {
+          "sample_index": 27,
+          "predicted_return": 0.0008752299472689629,
+          "actual_return": 0.003963414579629898,
+          "pnl": 0.003963414579629898,
+          "error": 0.003088184632360935
+        },
+        {
+          "sample_index": 29,
+          "predicted_return": 0.001030479557812214,
+          "actual_return": 0.003052503103390336,
+          "pnl": 0.003052503103390336,
+          "error": 0.002022023545578122
+        },
+        {
+          "sample_index": 26,
+          "predicted_return": 0.0005675880238413811,
+          "actual_return": 0.0006093845004215837,
+          "pnl": 0.0006093845004215837,
+          "error": 4.179647658020258e-05
+        },
+        {
+          "sample_index": 17,
+          "predicted_return": 0.0005885297432541847,
+          "actual_return": 0.0006056934944353998,
+          "pnl": 0.0006056934944353998,
+          "error": 1.7163751181215048e-05
+        },
+        {
+          "sample_index": 30,
+          "predicted_return": 0.0004945965483784676,
+          "actual_return": 0.0003043213509954512,
+          "pnl": 0.0003043213509954512,
+          "error": 0.00019027519738301635
+        },
+        {
+          "sample_index": 18,
+          "predicted_return": 0.00046741776168346405,
+          "actual_return": -0.0006071645184420049,
+          "pnl": -0.0006071645184420049,
+          "error": 0.001074582280125469
+        },
+        {
+          "sample_index": 19,
+          "predicted_return": 0.00042572617530822754,
+          "actual_return": -0.0012165450025349855,
+          "pnl": -0.0012165450025349855,
+          "error": 0.001642271177843213
+        },
+        {
+          "sample_index": 21,
+          "predicted_return": 0.0005912566557526588,
+          "actual_return": -0.0012172854039818048,
+          "pnl": -0.0012172854039818048,
+          "error": 0.0018085420597344637
+        },
+        {
+          "sample_index": 25,
+          "predicted_return": 0.0008748611435294151,
+          "actual_return": -0.0012218770571053028,
+          "pnl": -0.0012218770571053028,
+          "error": 0.002096738200634718
+        }
+      ],
+      "training_metrics": {
+        "best_val_loss": 0.00011533596261870116,
+        "best_epoch": 3
+      }
+    }
+  ]
+}

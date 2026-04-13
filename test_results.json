@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-01-03T19:19:40.006262",
+  "test_config": {
+    "num_etfs": 3,
+    "test_epochs": 5,
+    "lookback": 60,
+    "horizon": 5
+  },
+  "summary": {
+    "successful": 3,
+    "skipped": 0,
+    "errors": 0,
+    "total_time_seconds": 15.63210916519165
+  },
+  "results": [
+    {
+      "ticker": "HSBH",
+      "status": "success",
+      "dataset_size": 242,
+      "train_samples": 169,
+      "val_samples": 36,
+      "test_samples": 37,
+      "final_train_loss": 0.0011966983826520543,
+      "final_val_loss": 0.0016702678985893726,
+      "training_time_sec": 6.350625038146973
+    },
+    {
+      "ticker": "FOF",
+      "status": "success",
+      "dataset_size": 335,
+      "train_samples": 234,
+      "val_samples": 50,
+      "test_samples": 51,
+      "final_train_loss": 0.00039633747837797273,
+      "final_val_loss": 0.0005890355532756075,
+      "training_time_sec": 3.0915369987487793
+    },
+    {
+      "ticker": "GDO",
+      "status": "success",
+      "dataset_size": 335,
+      "train_samples": 234,
+      "val_samples": 50,
+      "test_samples": 51,
+      "final_train_loss": 0.0002354308671783656,
+      "final_val_loss": 0.0003118870808975771,
+      "training_time_sec": 3.0421829223632812
+    }
+  ]
+}

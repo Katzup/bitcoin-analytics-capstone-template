@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-01-04T12:20:05.380449",
+  "test_type": "xgboost_baseline",
+  "tickers_tested": [
+    "OXLCG",
+    "HCXY",
+    "VGI",
+    "HYI",
+    "IGI"
+  ],
+  "results": [
+    {
+      "ticker": "OXLCG",
+      "status": "error",
+      "error": "unsupported operand type(s) for -: 'float' and 'decimal.Decimal'"
+    },
+    {
+      "ticker": "HCXY",
+      "status": "error",
+      "error": "unsupported operand type(s) for -: 'float' and 'decimal.Decimal'"
+    },
+    {
+      "ticker": "VGI",
+      "status": "error",
+      "error": "unsupported operand type(s) for -: 'float' and 'decimal.Decimal'"
+    },
+    {
+      "ticker": "HYI",
+      "status": "error",
+      "error": "unsupported operand type(s) for -: 'float' and 'decimal.Decimal'"
+    },
+    {
+      "ticker": "IGI",
+      "status": "error",
+      "error": "unsupported operand type(s) for -: 'float' and 'decimal.Decimal'"
+    }
+  ],
+  "comparison": {
+    "status": "no_data"
+  }
+}

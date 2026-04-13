@@ -1,0 +1,38 @@
+TRILEMMA DCA SYSTEM - PERFORMANCE METRICS
+================================================================================
+
+Evaluation Period: 2025-09-15 00:00:00 to 2025-12-22 00:00:00
+Number of Periods: 15
+Base DCA Amount: $100.0
+
+DYNAMIC DCA (Model-Driven)
+----------------------------------------
+Total Invested: $1,500.00
+BTC Accumulated: 0.01445323
+Avg Cost Basis: $103,783.01
+Final Value: $1,281.35
+Total Return: -14.58%
+
+NAIVE DCA (Baseline)
+----------------------------------------
+Total Invested: $1,500.00
+BTC Accumulated: 0.01471882
+Avg Cost Basis: $101,910.34
+Final Value: $1,304.90
+Total Return: -13.01%
+
+COMPARATIVE PERFORMANCE
+----------------------------------------
+Alpha vs Naive: -1.57%
+BTC Accumulation Improvement: -1.80%
+Cost Basis Improvement: -1.84%
+
+RISK METRICS
+----------------------------------------
+Max Drawdown: -5.18%
+Sharpe Ratio: 18.85
+
+EFFICIENCY METRICS
+----------------------------------------
+Avg Allocation Turnover: 0.0730
+Total Turnover: 1.02

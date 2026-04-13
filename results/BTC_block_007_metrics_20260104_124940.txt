@@ -1,0 +1,23 @@
+BLOCK 7 METRICS
+==================================================
+Test window: 2025-10-29 → 2025-12-27
+
+total_invested_dynamic: 800.0
+total_units_accumulated_dynamic: 0.00866575189282694
+avg_unit_cost_dynamic: 92317.4364895213
+final_value_dynamic: 748.6863005326763
+total_return_pct_dynamic: -6.414212433415457
+total_invested_naive: 800.0
+total_units_accumulated_naive: 0.00867001915976619
+avg_unit_cost_naive: 92271.99908766686
+final_value_naive: 749.0549753271597
+total_return_pct_naive: -6.368128084105037
+alpha_vs_naive: -0.04608434931041988
+unit_accumulation_improvement: -0.04921865639064984
+unit_cost_improvement: -0.04924289308099137
+max_drawdown_pct: -11.11902715117864
+information_ratio: -1.63475336317509
+avg_allocation_turnover: 0.15618063964685927
+total_allocation_turnover: 1.093264477528015
+num_periods: 8
+date_range: 2025-11-03 00:00:00 to 2025-12-22 00:00:00

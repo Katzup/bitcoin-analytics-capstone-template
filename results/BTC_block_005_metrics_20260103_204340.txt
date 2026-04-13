@@ -1,0 +1,23 @@
+BLOCK 5 METRICS
+==================================================
+Test window: 2025-08-30 → 2025-10-28
+
+total_invested_dynamic: 800.0
+total_units_accumulated_dynamic: 0.007050435486300851
+avg_unit_cost_dynamic: 113468.16825065875
+final_value_dynamic: 755.7996336959649
+total_return_pct_dynamic: -5.525045788004391
+total_invested_naive: 800.0
+total_units_accumulated_naive: 0.007037936575023397
+avg_unit_cost_naive: 113669.68023540912
+final_value_naive: 754.4597629059331
+total_return_pct_naive: -5.6925296367583655
+alpha_vs_naive: 0.16748384875397496
+unit_accumulation_improvement: 0.17759340602487117
+unit_cost_improvement: 0.1772785709725202
+max_drawdown_pct: -11.186008605349784
+information_ratio: 1.2154469527680427
+avg_allocation_turnover: 0.22654553261819138
+total_allocation_turnover: 1.5858187283273397
+num_periods: 8
+date_range: 2025-09-01 00:00:00 to 2025-10-20 00:00:00

@@ -1,0 +1,51 @@
+\contentsline {section}{\numberline {1}Executive Summary}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Project Trajectory}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Headline Performance}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Secondary Contribution: Documented Null Results}{4}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Problem Statement}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Tournament Objective}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Evaluation Metric: Recency-Weighted Percentile}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Two Tournament Complications}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Literature Review}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Classical Technical Analysis}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Image-Based Financial Classification}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Gramian Angular Field Encoding}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Gap Addressed by This Work}{6}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Exploratory Data Analysis}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Regime Identification and Formal Statistical Tests}{6}{subsection.4.1}%
+\contentsline {paragraph}{Volatility Clustering (Ljung--Box).}{6}{section*.4}%
+\contentsline {paragraph}{Regime Distribution Difference (Mann--Whitney U).}{6}{section*.5}%
+\contentsline {paragraph}{Bootstrap Confidence Intervals.}{7}{section*.6}%
+\contentsline {subsection}{\numberline {4.2}Feature Shortlist}{7}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Methods: Midterm CNN/GAF Approach}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Design Rationale}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Gramian Angular Field Encoding}{8}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}CNN Architecture and Training}{8}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Midterm Result and Failure Analysis}{8}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Methods: Post-Midterm OLS Pivot}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Signal Design}{9}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Signal Interpretation: Regime-Relative Dampening}{10}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Allocator and Turnover Governor}{10}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Results}{11}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Performance Ladder}{11}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Fee Robustness}{11}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Null Results: Rejected Variants}{12}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Traditional Risk Metrics}{12}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Signal Diagnostics}{12}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Ablation Studies}{13}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Methodology}{13}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Pre-Midterm Ablations}{13}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Post-Midterm Ablations}{15}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Ablation Summary}{16}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Governance \& Reproducibility}{16}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Project Structure}{16}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Tournament Endpoint Contract}{17}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Torch Fallback and Backend Detection}{17}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Test Suite}{18}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Data Provenance}{18}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Conclusions \& Limitations}{18}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Summary of Findings}{18}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Performance Ceiling Assessment}{19}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Lessons Learned}{19}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Limitations}{20}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Future Directions}{20}{subsection.10.5}%

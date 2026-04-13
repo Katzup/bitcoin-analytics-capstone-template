@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-01-04T12:58:28.320770",
+  "test_type": "multi_timeframe_regime_classification",
+  "horizons_tested": [
+    20,
+    50,
+    100,
+    150,
+    200
+  ],
+  "strategy": "hierarchical",
+  "tickers_tested": [
+    "OXLCG",
+    "HCXY",
+    "VGI",
+    "HYI",
+    "IGI"
+  ],
+  "results": [
+    {
+      "ticker": "OXLCG",
+      "status": "error",
+      "error": "unsupported operand type(s) for *: 'float' and 'decimal.Decimal'"
+    },
+    {
+      "ticker": "HCXY",
+      "status": "error",
+      "error": "unsupported operand type(s) for *: 'float' and 'decimal.Decimal'"
+    },
+    {
+      "ticker": "VGI",
+      "status": "error",
+      "error": "unsupported operand type(s) for *: 'float' and 'decimal.Decimal'"
+    },
+    {
+      "ticker": "HYI",
+      "status": "error",
+      "error": "unsupported operand type(s) for *: 'float' and 'decimal.Decimal'"
+    },
+    {
+      "ticker": "IGI",
+      "status": "error",
+      "error": "unsupported operand type(s) for *: 'float' and 'decimal.Decimal'"
+    }
+  ],
+  "summary": {
+    "avg_hierarchical_return": null,
+    "avg_hierarchical_sharpe": null,
+    "improvement_vs_baseline": {
+      "return": null,
+      "sharpe": null
+    }
+  }
+}
